@@ -16,12 +16,12 @@ function App() {
   return (
     <ProvideAuth>
       <Router>
-        <ul>
-          <li> <Link to="/login"> Login </Link> </li>
-          <li> <Link to="/signup"> Register </Link> </li>
-          <li> <Link to="/"> Home </Link> </li>
-          <li> <Link to="/private"> Private </Link> </li>
-          <li> <Link to="/logout"> Logout </Link> </li>
+        <ul style={{display:'flex', justifyContent:'flex-end', margin:'10px 0 50px 0'}}>
+          <li style={{listStyleType: 'none', margin:'20px'}}> <Link to="/login"> Login </Link> </li>
+          <li style={{listStyleType: 'none', margin:'20px'}}> <Link to="/signup"> Register </Link> </li>
+          <li style={{listStyleType: 'none', margin:'20px'}}> <Link to="/"> Home </Link> </li>
+          <li style={{listStyleType: 'none', margin:'20px'}}> <Link to="/private"> Private </Link> </li>
+          <li style={{listStyleType: 'none', margin:'20px'}}> <Link to="/logout"> Logout </Link> </li>
         </ul>
         <Switch>
           <Route path="/login"> <Login /> </Route>
